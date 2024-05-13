@@ -6,6 +6,7 @@ from sklearn.preprocessing import StandardScaler
 
 # Load the trained model and scaler
 def load_model():
+    joblib.load('PrediksiDIabetes/diabetes_model.sav')
     return pickle.load(open("diabetes_model.sav", "rb"))
 
 def load_scaler():
